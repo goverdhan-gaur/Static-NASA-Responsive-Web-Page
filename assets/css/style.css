@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  background-image: url("../images/Background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "Poppins", sans-serif;
+}
+/* flex container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+/* Navbar */
+header {
+  border: 3px solid white;
+  margin: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.navigation ul {
+  list-style-type: none;
+}
+.navigation ul li {
+  display: inline;
+  margin: 0 8px;
+}
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+}
+.logo img {
+  width: 70%;
+}
+/* Hamburger */
+.burger {
+  display: none;
+}
+.burger div {
+  height: 3px;
+  background-color: white;
+  width: 25px;
+  margin: 6px 0;
+}
+/* Featured */
+.featured {
+  background-image: url("../images/featured.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 44vh;
+}
+
+.featured p {
+  font-size: 2rem;
+}
+.featured .highlight {
+  background-color: black;
+  color: white;
+  padding: 2px 7px;
+}
+.featured a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.row {
+  border: 1px solid whtie;
+}
+
+/* Teasers */
+.test {
+  color: white;
+  margin: 40px 0;
+}
+.row section {
+  display: inline-block;
+}
+.teasers section {
+  /* border:1px solid white; */
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content div h5 {
+  color: rgb(179, 179, 179);
+}
+.teaser {
+  /* border:1px solid wheat; */
+  padding: 20px 0 0 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Inner content */
+.heading {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color: black;
+  font-size: 1em;
+}
+
+.content {
+  font-size: 1em;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 40px 0;
+}
+.left {
+  flex: 1.1;
+  margin-right: 5px;
+}
+
+.right {
+  flex: 1;
+}
+table {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 80%;
+}
+td {
+  color: white;
+  text-align: center;
+  padding: 0 8px;
+  vertical-align: center;
+}
+.l {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.t {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.readMore {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  bottom: 0px;
+}
+.readMore p {
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+.readMore span {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.readMore span img {
+  width: 20px;
+  height: 30px;
+}
+.readMore a {
+  color: white;
+  text-decoration: none;
+}
+/* Background */
+.t1 .teaser {
+  background-image: url("../images/teaser 1.png");
+  background-size: 100% 100%;
+}
+.t2 .teaser {
+  background-image: url("../images/teaser\ 2\ -\ desktop.png");
+  background-size: 100% 100%;
+}
+
+.t3 .teaser {
+  background-image: url("../images/teaser 3.png");
+  background-size: 100% 100%;
+}
+
+.t4 .teaser {
+  background-image: url("../images/teaser\ 4.png");
+  background-size: 100% 100%;
+}
+
+.t5 .teaser {
+  background-image: url("../images/teaser\ 5.png");
+  background-size: 100% 100%;
+}
+
+.add {
+  padding: 20px;
+  background-image: url("../images/ad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+.ad a {
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-around;
+  color: white;
+}
+.middle {
+  margin: 15px;
+}
+
+footer img:first-of-type {
+  width: 10rem;
+}
+
+/* Grid Layout */
+@media only screen and (max-width: 600px) {
+  /* For mobile: */
+
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  .heading {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .content {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  nav {
+    position: relative;
+  }
+  .navigation {
+    width: 100%;
+    /* height: 10vh; */
+    display: none;
+    top: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navigation ul li {
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 10;
+  }
+  .navigation ul li:hover {
+    background-color: ivory;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .navigation ul li:hover a {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  /* For tablet: */
+
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+.hammenu {
+  display: block !important;
+}
